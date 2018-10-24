@@ -66,15 +66,15 @@ npm run dev - will start the application using nodemon
 To build in the root dir, run the following:
 
 ```
-docker build --rm -f Dockerfile .
+docker build --rm -f Dockerfile . -t lifes-a-riot-with-stubs
 ```
 
 To run:
 
 ```
-docker run --rm -d -p 5000:3000 lifes-a-riot-with-stubs
+docker run --rm -d -p 3000:3000 lifes-a-riot-with-stubs
 ```
-*Where 5000 is the host port and 3000 is the exposed port in the container
+*Where 3000 is the host port and 3000 is the exposed port in the container
 
 
 ## Contribute
