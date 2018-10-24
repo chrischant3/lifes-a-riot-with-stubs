@@ -1,12 +1,12 @@
 # Lifes a Riot with Stubs
 
 > What you need to build a simple stub using Node and Express...
-
+>
 > Add a JSON file in {projectDir}/data
-
+>
 > Add a new route in {projectDir}/routes/index.js
 
-```
+```javascript
 //Required variables
 var express = require('express');
 var router = express.Router();
@@ -20,20 +20,17 @@ router.get('/', function(req, res, next) {
 });
 
 module.exports = router;
-
 ```
 
 > Add to app.js as main controller
 
-```
+```javascript
 //Require in freshly added route
 var index = require('./routes/index');
 
 //Routes to use
 app.use('/', index);
 ```
-
-
 
 ## Table of Contents
 
@@ -44,38 +41,31 @@ app.use('/', index);
 
 ## Install
 
-```
-npm version required - 3.10.X and above
-node version required - v6.9.X and above
-Clone this mutha down, cd in
+```npm version required - 3.10.X and above```
 
-```
+```node version required - v6.9.X and above```
+
+```Clone this mutha down, cd in```
 
 ## Usage
 
-```
-npm start - will start the application on port 3000 - navigate to http://localhost:3000
-env PORT={port_number} npm start will start on http://localhost:{port_number}
+```npm start - will start the application on port 3000 - navigate to http://localhost:3000```
 
-npm run dev - will start the application using nodemon
+```env PORT={port_number} npm start will start on http://localhost:{port_number}```
 
-```
+```npm run dev - will start the application using nodemon```
 
 ## Docker
 
 To build in the root dir, run the following:
 
-```
-docker build --rm -f Dockerfile . -t lifes-a-riot-with-stubs
-```
+```docker build --rm -f Dockerfile . -t lifes-a-riot-with-stubs```
 
 To run:
 
-```
-docker run --rm -d -p 3000:3000 lifes-a-riot-with-stubs
-```
-*Where 3000 is the host port and 3000 is the exposed port in the container
+```docker run --rm -d -p 3000:3000 lifes-a-riot-with-stubs```
 
+*Where 3000 is the host port and 3000 is the exposed port in the container
 
 ## Contribute
 
